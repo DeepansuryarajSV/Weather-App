@@ -1,0 +1,121 @@
+
+:root {
+    --primary: #202b3c;
+    --secondary: #b7bfc8;
+    --bgcolor: #212529;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.element::-webkit-scrollbar { width: 0 !important }
+.element { overflow: -moz-scrollbars-none; }
+.element { -ms-overflow-style: none; }
+
+.greet{
+    margin-top: 8rem;
+}
+
+.WeatherDashboardContainer, .weatherHomecontainer{
+    color: var(--secondary);
+    height: calc(100vh - 57px);
+}
+
+
+.search-div{
+    width: 100%;
+    margin: 1rem;
+}
+.search-container{
+    margin-top: 5px;
+}
+
+
+.city-input{
+    border-radius: 15px 15px;
+}
+
+.Observation-container{
+    width: 60vw;
+}
+
+.observationAddon {
+    height: 45vh;
+}
+
+.currentObservation{
+    color: var(--secondary);
+}
+/* .observationAddon >.wind{
+    margin-left: 15px
+}
+.observationAddon >.astro{
+    margin-right: 15px;
+} */
+
+.wind, .atmos, .astro, .Forecasting{
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.observationAddon .atmos{
+    margin: 0 15px;
+}
+.wind-card{
+    margin-top: 20px;
+}
+
+.wind-card li{
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 35px;
+}
+
+.divider{
+    width: 80%;
+    margin-left: 5%;
+}
+
+.card-title{
+    margin-top: 50px;
+}
+
+.Forecasting{
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    /* height: calc(100vh - 72px); */
+}
+
+.forecast-card{
+    width: 100%;
+    background-color: var(--bgcolor);
+    position: relative;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.day{
+    position: absolute;
+    left: 10;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image{
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.desc{
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.forecast-title{
+    margin-bottom: 15px;
+}
